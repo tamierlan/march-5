@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.contact-one {
+  text-align: center;
+}
+.contact-one .column {
+  max-width:1170px;
+  margin: 5%;
+  padding:1em;
+}
+.contact-one ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-one .wrapper{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+.contact-one .wrapper > *{
+  padding: 1em;
+}
+.contact-one .company-info{
+  background:#c9e6ff;
+}
+
+.contact-one .company-info h3, .contact-one .company-info ul{
+  text-align: center;
+  margin:0 0 1rem 0;
+}
+.contact-one .contact{
+  background:#f9feff;
+}
+.contact-one form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
+}
+
+.contact-one form label{
+  display:block;
+}
+
+.contact-one form p{
+  margin:0;
+}
+
+.contact-one form .full{
+  grid-column: 1 / 3;
+}
+
+.contact-one form button, .contact-one form input, .contact-one form textarea{
+  width:100%;
+  padding:1em;
+  border:1px solid #c9e6ff;
+}
+
+.contact-one form button{
+  background:#c9e6ff;
+  border:0;
+  text-transform: uppercase;
+}
+
+.contact-one form button:hover,.contact-one form button:focus{
+  background:#92bde7;
+  color:#fff;
+  outline:0;
+  transition: background-color 2s ease-out;
+}
+
+/* LARGE SCREENS */
+@media(min-width:700px){
+  .contact-one .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .contact-one .wrapper > *{
+    padding: 2em;
+  }
+
+  .contact-one .company-info h3, .contact-one .company-info ul {
+    text-align: left;
+  }
+}
